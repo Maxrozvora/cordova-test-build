@@ -1,11 +1,12 @@
 {
     "name": "helloworld",
     "displayName": "HelloCordova",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "bump": "node node_modules/version-bump-prompt/bump.js --tag --push --all"
     },
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
@@ -20,5 +21,8 @@
         "platforms": [
             "android"
         ]
+    },
+    "devDependencies": {
+        "version-bump-prompt": "^6.0.3"
     }
 }
